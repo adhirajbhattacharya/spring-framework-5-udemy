@@ -8,6 +8,7 @@ import com.adhiraj.spring5.controllers.ConstructorInjectedController;
 import com.adhiraj.spring5.controllers.MyController;
 import com.adhiraj.spring5.controllers.PropertyInjectedController;
 import com.adhiraj.spring5.controllers.SetterInjectedController;
+import com.adhiraj.spring5.service.GreetingService;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.adhiraj.spring5"})
@@ -24,5 +25,7 @@ public class DiDemoApplication {
     System.out.println(ctx.getBean(PropertyInjectedController.class).hello());
     System.out.println(ctx.getBean(SetterInjectedController.class).hello());
     System.out.println(ctx.getBean(ConstructorInjectedController.class).hello());
+    for(String bean : ctx.getBeanNamesForType(GreetingService.class))
+      System.out.println(bean);
   }
 }

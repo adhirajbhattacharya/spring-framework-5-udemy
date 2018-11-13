@@ -1,8 +1,8 @@
 package com.adhiraj.spring5.service;
 
-//@Service
-//@Profile("in")
-//@Primary
+// @Service
+// @Profile("in")
+// @Primary
 public class IndianPrimaryGreetingService implements GreetingService {
 
   @Override

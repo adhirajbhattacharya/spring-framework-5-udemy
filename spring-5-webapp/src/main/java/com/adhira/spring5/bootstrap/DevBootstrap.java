@@ -1,5 +1,6 @@
 package com.adhira.spring5.bootstrap;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
@@ -17,6 +18,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
   private BookRepository bookRepository;
   private PublisherRepository publisherRepository;
   
+  @Autowired
   public DevBootstrap(AuthorRepository authorRepository, BookRepository bookRepository,
       PublisherRepository publisherRepository) {
     super();

@@ -1,9 +1,12 @@
 package com.adhira.spring5.models;
 
+import java.util.HashSet;
+import java.util.Set;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Publisher {
@@ -13,8 +16,8 @@ public class Publisher {
   private Long id;
   private String name;
   private String address;
-  // @OneToMany(mappedBy = "publisher")
-  // private Set<Book> books;
+  @OneToMany(mappedBy = "publisher")
+  private Set<Book> books = new HashSet<>();
 
   public Publisher() {
     super();

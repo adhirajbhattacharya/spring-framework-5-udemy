@@ -7,7 +7,7 @@ public class PropertyGreetingService implements GreetingService {
 
   @Override
   public String sayGreeting() {
-    return "HELLO GURU - Inject by private property";
+    return "HELLO GURU - Inject by property";
   }
 
 }
