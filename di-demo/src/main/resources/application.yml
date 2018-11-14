@@ -1,0 +1,17 @@
+adhiraj:
+  jms:
+    url: "jms->url->yaml"
+    username: "jms->username->yaml"
+    password: "jms->password->yaml"
+  db:
+    url: "db->url->yaml"
+    username: "db->username->yaml"
+    password: "db->password->yaml"
+    
+--- #start of new file
+spring:
+  profiles:
+    active: in #same as application-in.yml
+adhiraj:
+  jms:
+    url: "jms->url->yaml->GERMAN"

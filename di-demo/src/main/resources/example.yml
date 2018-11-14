@@ -1,0 +1,34 @@
+#this is a comment
+
+name: John
+
+names:    #inline comment
+  - John
+  - Paul
+  - Ringo
+  
+pound_sign: "#"
+
+book:
+  author: Eric Evans
+  publisher: penguin
+  
+truth: yes
+another_truth: True
+yet_another_truth: true
+
+no_more_truth: no #no, False, false
+
+string: this is it
+string_single_quote: "it's this"
+string_colon: "this:it"
+
+include_new_line: |
+  line 1
+  line 2
+  line 3
+  
+ignore_new_line: >
+  this is
+  one long
+  line
