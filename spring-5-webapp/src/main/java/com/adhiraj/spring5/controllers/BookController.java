@@ -1,9 +1,9 @@
-package com.adhira.spring5.controllers;
+package com.adhiraj.spring5.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.adhira.spring5.repositories.BookRepository;
+import com.adhiraj.spring5.repositories.BookRepository;
 
 @Controller
 public class BookController {

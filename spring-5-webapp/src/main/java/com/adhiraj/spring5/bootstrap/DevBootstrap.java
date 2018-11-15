@@ -1,15 +1,15 @@
-package com.adhira.spring5.bootstrap;
+package com.adhiraj.spring5.bootstrap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
-import com.adhira.spring5.models.Author;
-import com.adhira.spring5.models.Book;
-import com.adhira.spring5.models.Publisher;
-import com.adhira.spring5.repositories.AuthorRepository;
-import com.adhira.spring5.repositories.BookRepository;
-import com.adhira.spring5.repositories.PublisherRepository;
+import com.adhiraj.spring5.models.Author;
+import com.adhiraj.spring5.models.Book;
+import com.adhiraj.spring5.models.Publisher;
+import com.adhiraj.spring5.repositories.AuthorRepository;
+import com.adhiraj.spring5.repositories.BookRepository;
+import com.adhiraj.spring5.repositories.PublisherRepository;
 
 @Component
 public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> {

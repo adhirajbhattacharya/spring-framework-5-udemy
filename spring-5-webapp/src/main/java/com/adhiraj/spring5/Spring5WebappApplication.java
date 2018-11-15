@@ -1,4 +1,4 @@
-package com.adhira.spring5;
+package com.adhiraj.spring5;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

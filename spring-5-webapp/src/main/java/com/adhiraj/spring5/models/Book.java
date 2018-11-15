@@ -1,4 +1,4 @@
-package com.adhira.spring5.models;
+package com.adhiraj.spring5.models;
 
 import java.util.HashSet;
 import java.util.Set;
